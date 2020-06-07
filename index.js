@@ -1,7 +1,7 @@
 // Add your functions here
 function map(arr, callbackFn) {
   let newArr = []
-  for (var i = 0; i < arr.length; i++) {
+  for (let i = 0; i < arr.length; i++) {
     newArr.push(callbackFn(arr[i]))
   }
   return newArr
