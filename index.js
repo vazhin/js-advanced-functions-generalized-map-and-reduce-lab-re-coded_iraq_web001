@@ -8,7 +8,7 @@ function map(arr, callbackFn) {
 }
 
 function reduce(arr, callbackFn, startingPoint) {
-  let newValue;
+  let newValue = startingPoint ? startingPoint : arr[0]
   if (startingPoint){
     newValue = startingPoint;
   }
