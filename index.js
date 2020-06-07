@@ -9,10 +9,8 @@ function map(arr, callbackFn) {
 
 function reduce(arr, callbackFn, startingPoint) {
   let newValue = startingPoint ? startingPoint : arr[0]
-  if (startingPoint){
-    newValue = startingPoint;
-  }
-  for (var i = 0; i < arr.length; i++) {
+
+  for (let i = 0; i < arr.length; i++) {
     newValue = callbackFn(arr[i], newValue)
   }
   return newValue
